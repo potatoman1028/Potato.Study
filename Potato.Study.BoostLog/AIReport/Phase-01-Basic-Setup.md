@@ -12,9 +12,9 @@
 
 ## 코드 포인트
 
-- phase 실행 함수: [Phase01Basic.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase01Basic.cpp:10)
-- logger 선언: [Phase01Basic.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase01Basic.cpp:15)
-- 첫 로그 기록: [Phase01Basic.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase01Basic.cpp:17)
+- phase 실행 함수: [Phase01Basic.cpp](../phases/Phase01Basic.cpp)
+- logger 선언: [Phase01Basic.cpp](../phases/Phase01Basic.cpp)
+- 첫 로그 기록: [Phase01Basic.cpp](../phases/Phase01Basic.cpp)
 
 ## 핵심 이해
 

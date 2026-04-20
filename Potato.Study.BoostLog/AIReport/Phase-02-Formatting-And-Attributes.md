@@ -12,9 +12,9 @@
 
 ## 코드 포인트
 
-- 공통 attribute 등록: [Phase02Formatting.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase02Formatting.cpp:18)
-- 포맷 정의 시작: [Phase02Formatting.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase02Formatting.cpp:20)
-- 날짜/시간 지원 헤더: [Phase02Formatting.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase02Formatting.cpp:8)
+- 공통 attribute 등록: [Phase02Formatting.cpp](../phases/Phase02Formatting.cpp)
+- 포맷 정의 시작: [Phase02Formatting.cpp](../phases/Phase02Formatting.cpp)
+- 날짜/시간 지원 헤더: [Phase02Formatting.cpp](../phases/Phase02Formatting.cpp)
 
 ## 핵심 이해
 
@@ -31,6 +31,11 @@
 ## 배운 점
 
 - 아직 비워 둠
+
+## 관찰 메모
+
+- 같은 프로세스에서 phase를 연속 실행하면 `LineID`는 이어질 수 있다.
+- 이는 `add_common_attributes()`가 process-wide `core`에 공통 attribute를 등록하는 구조와 연결해서 이해하는 편이 좋다.
 
 ## 다음 질문
 

@@ -32,9 +32,15 @@
 *.exe
 *.out
 *.app
+*.ilk
 
 # Logs
 *.log
+*.tlog
+*.lastbuildstate
+*.recipe
+*.idb
+*.pdb
 
 # ===== Visual Studio =====
 
@@ -49,3 +55,9 @@
 *.user
 *.userosscache
 *.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+x64/

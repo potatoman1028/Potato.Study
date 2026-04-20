@@ -12,9 +12,9 @@
 
 ## 코드 포인트
 
-- console sink: [Phase03Sinks.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase03Sinks.cpp:29)
-- file sink: [Phase03Sinks.cpp](D:/Potato.Study/Potato.Study.BoostLog/phases/Phase03Sinks.cpp:30)
-- 실행 결과 예시 파일: [phase3_sample.log](D:/Potato.Study/logs/phase3_sample.log:1)
+- console sink: [Phase03Sinks.cpp](../phases/Phase03Sinks.cpp)
+- file sink: [Phase03Sinks.cpp](../phases/Phase03Sinks.cpp)
+- 실행 결과 예시 파일: `logs/phase3_sample.log`
 
 ## 핵심 이해
 

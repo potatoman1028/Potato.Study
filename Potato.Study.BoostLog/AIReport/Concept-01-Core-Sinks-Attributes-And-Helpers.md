@@ -167,7 +167,7 @@ helper 관점에서 보면 `add_console_log()`와 `add_file_log()`는
 
 이 함수는 "로깅 설정을 초기화하고 다시 구성"할 때 유용하다.
 
-현재 프로젝트의 [`BoostLogShared.cpp`](D:/Potato.Study/Potato.Study.BoostLog/phases/BoostLogShared.cpp:24) 에서  
+현재 프로젝트의 [`BoostLogShared.cpp`](../phases/BoostLogShared.cpp)에서  
 `ResetLogging()`이 바로 `remove_all_sinks()`를 호출한다.
 
 왜 이게 필요하냐면, 지금 프로그램은 같은 프로세스 안에서 `Phase 01`, `Phase 02`, `Phase 03`을 반복 실행한다.  
@@ -179,8 +179,8 @@ helper 관점에서 보면 `add_console_log()`와 `add_file_log()`는
 - 이어서 `Phase 03`이 console sink와 file sink를 또 등록
 - 정리 없이 진행하면 console 출력이 중복되거나, 의도하지 않은 sink 조합이 남을 수 있다
 
-즉, 이 프로젝트에서 `remove_all_sinks()`는 단순 정리 코드가 아니라  
-**phase 간 실험 환경을 독립적으로 유지하기 위한 초기화 동작**이다.
+즉, 이 프로젝트에서 `remove_all_sinks()`는 sink 구성을 정리해 다음 phase를 다시 실험하게 돕는다.  
+다만 global attribute 값까지 완전히 초기화하는 것은 아니므로, `LineID` 같은 값은 phase 사이에서 이어질 수 있다.
 
 ### set_filter(...) / reset_filter()
 

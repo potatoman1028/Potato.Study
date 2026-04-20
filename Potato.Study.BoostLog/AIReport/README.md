@@ -29,8 +29,8 @@
 - 콘솔 출력
 - 파일 출력
 
-개념 정리는 먼저 [Concept-01-Core-Sinks-Attributes-And-Helpers.md](D:/Potato.Study/Potato.Study.BoostLog/AIReport/Concept-01-Core-Sinks-Attributes-And-Helpers.md:1) 를 읽고, 이후 phase 문서를 따라가는 순서를 권장한다.
+개념 정리는 먼저 [Concept-01-Core-Sinks-Attributes-And-Helpers.md](./Concept-01-Core-Sinks-Attributes-And-Helpers.md)를 읽고, 이후 phase 문서를 따라가는 순서를 권장한다.
 
-구조를 그림으로 다시 보고 싶다면 [Diagram.md](D:/Potato.Study/Potato.Study.BoostLog/AIReport/Diagram.md:1) 를 보면 된다.
+구조를 그림으로 다시 보고 싶다면 [Diagram.md](./Diagram.md)를 보면 된다.
 
 고급 주제는 다음 phase에서 별도로 확장한다.
