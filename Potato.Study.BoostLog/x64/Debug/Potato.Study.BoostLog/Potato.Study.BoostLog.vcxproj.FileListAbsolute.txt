@@ -1,0 +1,4 @@
+D:\Potato.Study\Potato.Study.BoostLog\x64\Debug\Potato.Study.BoostLog\Potato.S.A33AE0A3.Up2Date
+D:\Potato.Study\Potato.Study.BoostLog\x64\Debug\boost_filesystem-vc143-mt-gd-x64-1_88.dll
+D:\Potato.Study\Potato.Study.BoostLog\x64\Debug\boost_log-vc143-mt-gd-x64-1_88.dll
+D:\Potato.Study\Potato.Study.BoostLog\x64\Debug\boost_thread-vc143-mt-gd-x64-1_88.dll

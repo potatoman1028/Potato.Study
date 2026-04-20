@@ -1,23 +1,19 @@
+# ===== C++ =====
+
 # Prerequisites
 *.d
 
-# Compiled Object files
+# Compiled object files
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
+# Compiled dynamic libraries
 *.so
 *.dylib
 *.dll
@@ -26,7 +22,7 @@
 *.mod
 *.smod
 
-# Compiled Static libraries
+# Compiled static libraries
 *.lai
 *.la
 *.a
@@ -37,5 +33,19 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# Logs
+*.log
+
+# ===== Visual Studio =====
+
+# Visual Studio workspace/cache
+.vs/
+*.VC.db
+*.VC.opendb
+*.ipch
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
