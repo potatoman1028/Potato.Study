@@ -55,9 +55,16 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.VC.VC.opendb
+*.VC.db-wal
+*.VC.db-shm
 
 # Build outputs
 [Bb]in/
 [Dd]ebug/
 [Rr]elease/
 x64/
+x86/
+
+# Visual C++ intermediate/build metadata
+*.vcxproj.FileListAbsolute.txt
