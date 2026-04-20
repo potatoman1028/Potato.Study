@@ -23,6 +23,54 @@
   - `Potato.Study.Network`
   - `Potato.Study.Threading`
 
+## 현재 로컬 환경
+
+아래 내용은 이 저장소를 기준으로 직접 확인한 현재 로컬 개발 환경이다.
+
+- 운영 환경: Windows
+- IDE: Visual Studio 2022 Community 설치됨
+- MSBuild: 설치됨
+  - 경로: `C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe`
+- Visual Studio 개발자 셸 초기화 스크립트: 존재함
+  - 경로: `C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\VsDevCmd.bat`
+- vcpkg: Visual Studio 번들 버전 설치됨
+  - 경로: `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg.exe`
+  - 현재 셸의 `PATH`에는 잡혀 있지 않다.
+  - 현재 확인된 배포 형태는 manifest 모드이며, classic mode 인스턴스는 확인되지 않았다.
+- Boost: 현재 셸 기준으로 활성화되어 있지 않음
+  - `BOOST_ROOT` 환경 변수가 비어 있다.
+  - 프로젝트가 기대하는 Boost include/lib 경로는 자동으로 해결되지 않는 상태다.
+
+## 현재 저장소에서 중요한 환경 메모
+
+- `Potato.Study.BoostLog` 프로젝트는 `vcpkg` manifest를 사용하지 않는다.
+- 현재 프로젝트 파일은 `$(BOOST_ROOT)`를 기준으로 Boost 헤더/라이브러리를 찾는다.
+- 따라서 이 프로젝트를 빌드하려면 먼저 로컬에 Boost를 준비하고 `BOOST_ROOT`를 설정해야 한다.
+- 현재 기본 PowerShell 세션에서는 `msbuild`가 바로 인식되지 않을 수 있다.
+  - 이 경우 Visual Studio Developer Command Prompt를 사용하거나,
+  - `VsDevCmd.bat`를 거친 뒤 빌드 명령을 실행한다.
+
+## 환경 준비 가이드
+
+`Potato.Study.BoostLog`를 다시 확인하거나 빌드할 때는 아래 순서를 우선한다.
+
+1. Boost를 로컬에 설치하거나 압축 해제한다.
+2. `BOOST_ROOT`를 Boost 루트 경로로 설정한다.
+3. 필요하면 Boost.Log 관련 라이브러리를 빌드한다.
+4. Visual Studio 개발자 셸에서 `msbuild`를 실행한다.
+
+예시:
+
+```powershell
+$env:BOOST_ROOT = "C:\local\boost_1_86_0"
+& "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" .\Potato.Study.sln /p:Configuration=Debug /p:Platform=x64
+```
+
+추가 메모:
+
+- `vcpkg`가 설치되어 있어도, 현재 프로젝트가 `BOOST_ROOT` 기반이면 곧바로 그 설정을 대체하지는 않는다.
+- `vcpkg` 기반으로 전환하려면 `vcpkg.json` 추가와 프로젝트 설정 변경을 별도로 검토해야 한다.
+
 ## 작업 스타일
 
 - 영리한 코드보다 읽기 쉬운 코드를 우선한다.
