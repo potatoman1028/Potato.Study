@@ -4,3 +4,4 @@
 현재 학습 예제:
 
 - [Potato.Study.BoostLog](Potato.Study.BoostLog/README.md)
+- [Potato.Study.BoostJson](Potato.Study.BoostJson/README.md)

@@ -13,8 +13,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{F7F62474-415B-4C03-BDF4-0F916EC79C56}</ProjectGuid>
-    <RootNamespace>PotatoStudyBoostLog</RootNamespace>
+    <ProjectGuid>{12DDE5AC-A424-4A44-8479-D9F93085F390}</ProjectGuid>
+    <RootNamespace>PotatoStudyBoostJson</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -52,9 +52,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>BOOST_LOG_DYN_LINK;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(BoostIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -70,9 +70,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>BOOST_LOG_DYN_LINK;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalIncludeDirectories>$(BoostIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -85,43 +85,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="phases\BoostLogShared.cpp" />
-    <ClCompile Include="phases\Phase01Basic.cpp" />
-    <ClCompile Include="phases\Phase02Formatting.cpp" />
-    <ClCompile Include="phases\Phase03Sinks.cpp" />
-    <ClCompile Include="phases\Phase04SeverityFilter.cpp" />
-    <ClCompile Include="phases\Phase05CustomAttribute.cpp" />
-    <ClCompile Include="phases\Phase06RotationFile.cpp" />
-    <ClCompile Include="phases\Phase07MultiThread.cpp" />
-    <ClCompile Include="phases\Phase08AsyncSink.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="phases\Phase01ParseSerialize.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="phases\BoostLogShared.h" />
-    <ClInclude Include="phases\Phase01Basic.h" />
-    <ClInclude Include="phases\Phase02Formatting.h" />
-    <ClInclude Include="phases\Phase03Sinks.h" />
-    <ClInclude Include="phases\Phase04SeverityFilter.h" />
-    <ClInclude Include="phases\Phase05CustomAttribute.h" />
-    <ClInclude Include="phases\Phase06RotationFile.h" />
-    <ClInclude Include="phases\Phase07MultiThread.h" />
-    <ClInclude Include="phases\Phase08AsyncSink.h" />
+    <ClInclude Include="phases\Phase01ParseSerialize.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AIReport\Concept-01-Core-Sinks-Attributes-And-Helpers.md" />
-    <None Include="AIReport\Phase-01-Basic-Setup.md" />
-    <None Include="AIReport\Phase-02-Formatting-And-Attributes.md" />
-    <None Include="AIReport\Phase-03-Sinks-And-Output.md" />
     <None Include="AIReport\Next-Steps.md" />
-    <None Include="AIReport\Phase-04-Severity-Filter.md" />
-    <None Include="AIReport\Phase-05-Custom-Attribute.md" />
-    <None Include="AIReport\Phase-06-Rotation-File.md" />
-    <None Include="AIReport\Phase-07-Multi-Thread.md" />
-    <None Include="AIReport\Phase-08-Async-Sink.md" />
+    <None Include="AIReport\Phase-01-Parse-And-Serialize.md" />
     <None Include="AIReport\README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="AIReport\boost_log_flowchart_tidy_ko.png" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

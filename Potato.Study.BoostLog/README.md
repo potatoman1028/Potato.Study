@@ -19,10 +19,10 @@
 ### 전제 조건
 
 - Visual Studio 2022 C++ 빌드 도구
-- Boost 설치
-- `BOOST_ROOT` 환경 변수가 Boost 루트를 가리켜야 함
+- Boost 설치 또는 Visual Studio에 전역 통합된 vcpkg Boost 패키지
+- 수동 Boost 설치를 사용할 경우 `BOOST_ROOT` 환경 변수가 Boost 루트를 가리켜야 함
 
-예시:
+`BOOST_ROOT` 예시:
 
 ```powershell
 $env:BOOST_ROOT = "C:\local\boost_1_86_0"
@@ -43,6 +43,12 @@ cd $env:BOOST_ROOT
 ```powershell
 msbuild .\Potato.Study.sln /p:Configuration=Debug /p:Platform=x64
 ```
+
+참고:
+
+- 이 저장소는 `vcpkg.json`을 포함하지 않는다.
+- Visual Studio에 전역 통합된 vcpkg가 있으면 `BOOST_ROOT` 없이도 빌드가 될 수 있다.
+- 전역 vcpkg 통합이 없는 환경에서는 수동 Boost 설치와 `BOOST_ROOT` 설정이 필요하다.
 
 실행 파일:
 
