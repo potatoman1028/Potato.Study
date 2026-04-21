@@ -85,6 +85,11 @@
     <ClCompile Include="phases\Phase01Basic.cpp" />
     <ClCompile Include="phases\Phase02Formatting.cpp" />
     <ClCompile Include="phases\Phase03Sinks.cpp" />
+    <ClCompile Include="phases\Phase04SeverityFilter.cpp" />
+    <ClCompile Include="phases\Phase05CustomAttribute.cpp" />
+    <ClCompile Include="phases\Phase06RotationFile.cpp" />
+    <ClCompile Include="phases\Phase07MultiThread.cpp" />
+    <ClCompile Include="phases\Phase08AsyncSink.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -92,13 +97,23 @@
     <ClInclude Include="phases\Phase01Basic.h" />
     <ClInclude Include="phases\Phase02Formatting.h" />
     <ClInclude Include="phases\Phase03Sinks.h" />
+    <ClInclude Include="phases\Phase04SeverityFilter.h" />
+    <ClInclude Include="phases\Phase05CustomAttribute.h" />
+    <ClInclude Include="phases\Phase06RotationFile.h" />
+    <ClInclude Include="phases\Phase07MultiThread.h" />
+    <ClInclude Include="phases\Phase08AsyncSink.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AIReport\Concept-01-Core-Sinks-Attributes-And-Helpers.md" />
     <None Include="AIReport\Phase-01-Basic-Setup.md" />
     <None Include="AIReport\Phase-02-Formatting-And-Attributes.md" />
     <None Include="AIReport\Phase-03-Sinks-And-Output.md" />
-    <None Include="AIReport\Phase-04-Next-Steps.md" />
+    <None Include="AIReport\Next-Steps.md" />
+    <None Include="AIReport\Phase-04-Severity-Filter.md" />
+    <None Include="AIReport\Phase-05-Custom-Attribute.md" />
+    <None Include="AIReport\Phase-06-Rotation-File.md" />
+    <None Include="AIReport\Phase-07-Multi-Thread.md" />
+    <None Include="AIReport\Phase-08-Async-Sink.md" />
     <None Include="AIReport\README.md" />
   </ItemGroup>
   <ItemGroup>

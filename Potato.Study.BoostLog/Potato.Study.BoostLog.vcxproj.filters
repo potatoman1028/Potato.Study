@@ -23,6 +23,21 @@
     <ClCompile Include="phases\Phase03Sinks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="phases\Phase04SeverityFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase05CustomAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase06RotationFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase07MultiThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase08AsyncSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -38,6 +53,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="phases\Phase03Sinks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase04SeverityFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase05CustomAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase06RotationFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase07MultiThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase08AsyncSink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

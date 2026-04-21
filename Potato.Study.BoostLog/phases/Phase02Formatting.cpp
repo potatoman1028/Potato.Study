@@ -3,6 +3,7 @@
 #include "BoostLogShared.h"
 
 #include <iostream>
+#include <string>
 
 #include <boost/log/attributes/current_thread_id.hpp>
 #include <boost/log/expressions.hpp>
@@ -26,10 +27,13 @@ namespace sources = boost::log::sources;
 void RunPhase02Formatting()
 {
     ResetLogging();
+    SetGlobalTag("Phase02");
+
     boost::log::add_common_attributes();
 
     const auto format =
         expr::stream
+        << "[" << expr::attr<std::string>("Tag") << "] "
         << "[#" << expr::attr<unsigned int>("LineID") << "] "
         << "[" << expr::attr<boost::posix_time::ptime>("TimeStamp") << "] "
         << "[" << expr::attr<Severity>("Severity") << "] "

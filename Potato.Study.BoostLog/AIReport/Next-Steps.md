@@ -1,16 +1,21 @@
-# Phase 04. Next Steps
+## TODO And Backlog
 
 ## 목표
 
-현재 최소 예제 다음에 어떤 순서로 학습을 확장할지 정리한다.
+현재 최소 예제 다음에 어떤 순서로 학습을 확장할지 TODO 목록으로 관리한다.
 
-## 추천 확장 순서
+## TODO List
 
-1. severity 필터 추가
-2. custom attribute 추가
-3. 회전 파일 설정
-4. 멀티스레드 로그 실험
-5. 비동기 sink 검토
+- [x] severity 필터 추가
+  - 현재 작업 phase: [Phase-04-Severity-Filter.md](./Phase-04-Severity-Filter.md)
+- [x] custom attribute 추가
+  - 현재 작업 phase: [Phase-05-Custom-Attribute.md](./Phase-05-Custom-Attribute.md)
+- [x] 회전 파일 설정
+  - 현재 작업 phase: [Phase-06-Rotation-File.md](./Phase-06-Rotation-File.md)
+- [x] 멀티스레드 로그 실험
+  - 현재 작업 phase: [Phase-07-Multi-Thread.md](./Phase-07-Multi-Thread.md)
+- [x] 비동기 sink 검토
+  - 현재 작업 phase: [Phase-08-Async-Sink.md](./Phase-08-Async-Sink.md)
 
 ## 왜 이 순서인가
 

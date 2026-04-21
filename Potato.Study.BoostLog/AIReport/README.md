@@ -9,7 +9,12 @@
 - `Phase-01-Basic-Setup.md`
 - `Phase-02-Formatting-And-Attributes.md`
 - `Phase-03-Sinks-And-Output.md`
-- `Phase-04-Next-Steps.md`
+- `Phase-04-Severity-Filter.md`
+- `Phase-05-Custom-Attribute.md`
+- `Phase-06-Rotation-File.md`
+- `Phase-07-Multi-Thread.md`
+- `Phase-08-Async-Sink.md`
+- `Next-Steps.md`
 
 ## 사용 방식
 
@@ -28,6 +33,11 @@
 - 공통 attribute 등록
 - 콘솔 출력
 - 파일 출력
+- severity filter
+- custom attribute
+- rotation file
+- multi-thread logging
+- async sink
 
 개념 정리는 먼저 [Concept-01-Core-Sinks-Attributes-And-Helpers.md](./Concept-01-Core-Sinks-Attributes-And-Helpers.md)를 읽고, 이후 phase 문서를 따라가는 순서를 권장한다.
 
