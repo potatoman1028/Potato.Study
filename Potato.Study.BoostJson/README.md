@@ -24,17 +24,12 @@
 필수 조건:
 
 - Visual Studio 2022 C++ 빌드 도구
-- Boost.JSON 헤더와 라이브러리를 찾을 수 있는 환경
-  - 현재 로컬에서는 Visual Studio의 vcpkg 통합 환경으로 해결된다.
-  - 수동 Boost 환경을 쓸 경우 `BOOST_ROOT`를 Boost 루트로 설정하고 Boost.JSON 라이브러리를 준비한다.
+- Visual Studio 번들 `vcpkg`
+- `vcpkg` manifest mode로 Boost 패키지를 복원할 수 있는 환경
 
-예시:
+이 README는 `vcpkg` manifest mode를 기준으로 설명한다. 솔루션 전체를 빌드하는 기준이라면 루트 `vcpkg.json`에 최소 `boost-log`와 `boost-json`이 포함되어 있어야 한다.
 
-```powershell
-$env:BOOST_ROOT = "C:\local\boost_1_86_0"
-```
-
-빌드:
+의존성 복원이 끝난 뒤 빌드:
 
 ```powershell
 & "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" .\Potato.Study.sln /p:Configuration=Debug /p:Platform=x64
@@ -54,6 +49,9 @@ $env:BOOST_ROOT = "C:\local\boost_1_86_0"
 
 참고:
 
+- 현재 저장소는 아직 루트 `vcpkg.json` manifest를 두지 않는다.
+- 따라서 실제 CLI 복원 절차는 manifest 추가와 함께 정리해야 한다.
+- 프로젝트 파일에는 `BOOST_ROOT` fallback 속성이 남아 있을 수 있지만, 학습 문서는 더 이상 수동 Boost 설치 절차를 기본 경로로 안내하지 않는다.
 - 이번 phase는 기본 Boost.JSON 라이브러리 링크 방식을 사용한다.
 - 목표는 먼저 `parse` / `serialize` 흐름과 JSON 타입 읽기를 확인하고, 이어서 object / array를 C++ 코드에서 직접 조립하는 것이다.
 

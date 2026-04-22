@@ -19,36 +19,22 @@
 ### 전제 조건
 
 - Visual Studio 2022 C++ 빌드 도구
-- Boost 설치 또는 Visual Studio에 전역 통합된 vcpkg Boost 패키지
-- 수동 Boost 설치를 사용할 경우 `BOOST_ROOT` 환경 변수가 Boost 루트를 가리켜야 함
+- Visual Studio 번들 `vcpkg`
+- `vcpkg` manifest mode로 Boost 패키지를 복원할 수 있는 환경
 
-`BOOST_ROOT` 예시:
+이 README는 `vcpkg` manifest mode를 기준으로 설명한다. 솔루션 전체를 빌드하는 기준이라면 루트 `vcpkg.json`에 최소 `boost-log`와 `boost-json`이 포함되어 있어야 한다.
 
-```powershell
-$env:BOOST_ROOT = "C:\local\boost_1_86_0"
-```
-
-`Boost.Log`는 링크가 필요한 라이브러리이므로, 필요하면 Boost에서 라이브러리를 먼저 빌드해야 한다.
-
-예시:
+의존성 복원이 끝난 뒤 솔루션 빌드:
 
 ```powershell
-cd $env:BOOST_ROOT
-.\bootstrap.bat
-.\b2 --with-log --with-thread --with-filesystem --with-date_time stage
-```
-
-솔루션 빌드:
-
-```powershell
-msbuild .\Potato.Study.sln /p:Configuration=Debug /p:Platform=x64
+& "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" .\Potato.Study.sln /p:Configuration=Debug /p:Platform=x64
 ```
 
 참고:
 
-- 이 저장소는 `vcpkg.json`을 포함하지 않는다.
-- Visual Studio에 전역 통합된 vcpkg가 있으면 `BOOST_ROOT` 없이도 빌드가 될 수 있다.
-- 전역 vcpkg 통합이 없는 환경에서는 수동 Boost 설치와 `BOOST_ROOT` 설정이 필요하다.
+- 현재 저장소는 아직 루트 `vcpkg.json` manifest를 두지 않는다.
+- 따라서 실제 CLI 복원 절차는 manifest 추가와 함께 정리해야 한다.
+- 프로젝트 파일에는 `BOOST_ROOT` fallback 속성이 남아 있을 수 있지만, 학습 문서는 더 이상 수동 Boost 설치 절차를 기본 경로로 안내하지 않는다.
 
 실행 파일:
 
