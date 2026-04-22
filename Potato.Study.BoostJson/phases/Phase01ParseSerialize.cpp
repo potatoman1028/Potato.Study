@@ -13,7 +13,7 @@ void RunPhase01ParseSerialize()
   "project": "Potato.Study.BoostJson",
   "phase": 1,
   "features": ["parse", "serialize"],
-  "enabled": true
+  "enabled": false
 })";
 
     const json::value parsed = json::parse(source);

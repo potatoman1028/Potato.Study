@@ -20,9 +20,21 @@
     <ClCompile Include="phases\Phase01ParseSerialize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="phases\Phase02ReadJsonTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase03BuildJsonProgrammatically.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phases\Phase01ParseSerialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase02ReadJsonTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase03BuildJsonProgrammatically.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -37,6 +49,12 @@
       <Filter>Documents</Filter>
     </None>
     <None Include="AIReport\Phase-01-Parse-And-Serialize.md">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="AIReport\Phase-02-Read-Json-Types.md">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="AIReport\Phase-03-Build-Json-Programmatically.md">
       <Filter>Documents</Filter>
     </None>
   </ItemGroup>

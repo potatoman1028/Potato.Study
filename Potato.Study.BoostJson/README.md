@@ -15,7 +15,11 @@
 
 ## 어떻게 실행하는지
 
-현재는 `Phase 01 - Parse and Serialize`까지 구현된 상태다.
+현재는 아래 phase까지 구현된 상태다.
+
+- `Phase 01 - Parse and Serialize`
+- `Phase 02 - Read JSON Types`
+- `Phase 03 - Build JSON Programmatically`
 
 필수 조건:
 
@@ -42,12 +46,16 @@ $env:BOOST_ROOT = "C:\local\boost_1_86_0"
 .\x64\Debug\Potato.Study.BoostJson.exe
 ```
 
-실행 후 메뉴에서 `1`을 선택하면 Phase 01 예제가 실행된다.
+실행 후 메뉴에서 아래 값을 선택할 수 있다.
+
+- `1`: Phase 01 - Parse and Serialize
+- `2`: Phase 02 - Read JSON Types
+- `3`: Phase 03 - Build JSON Programmatically
 
 참고:
 
 - 이번 phase는 기본 Boost.JSON 라이브러리 링크 방식을 사용한다.
-- 목표는 `parse` / `serialize` 흐름을 가장 작은 콘솔 예제로 먼저 확인하는 것이다.
+- 목표는 먼저 `parse` / `serialize` 흐름과 JSON 타입 읽기를 확인하고, 이어서 object / array를 C++ 코드에서 직접 조립하는 것이다.
 
 ## 무엇을 배웠는지
 
@@ -56,3 +64,5 @@ $env:BOOST_ROOT = "C:\local\boost_1_86_0"
 - 현재 저장소는 이미 Boost 기반 예제를 포함하고 있으므로, 새 JSON 학습 주제는 `Boost.JSON`으로 이어가는 편이 자연스럽다.
 - `config load`를 바로 다루기보다 JSON serializer 자체를 먼저 익히는 편이 학습 범위를 더 명확하게 나눌 수 있다.
 - Phase 01에서는 JSON text -> `boost::json::value` -> JSON text 흐름을 가장 작은 예제로 확인할 수 있다.
+- Phase 02에서는 object, array, string, number, bool, null을 각각 어떤 API로 읽는지 확인할 수 있다.
+- Phase 03에서는 parse 없이 object와 array를 직접 조립한 뒤 serialize 하는 흐름을 확인할 수 있다.

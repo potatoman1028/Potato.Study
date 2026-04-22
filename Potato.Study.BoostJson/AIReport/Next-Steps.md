@@ -13,15 +13,15 @@
 
 ## 현재 작업 phase
 
-- [Phase-01-Parse-And-Serialize.md](./Phase-01-Parse-And-Serialize.md)
+- [Phase-03-Build-Json-Programmatically.md](./Phase-03-Build-Json-Programmatically.md)
 
 ## TODO List
 
 - [x] Phase 01 - Parse and Serialize
   - JSON 문자열을 `boost::json::value`로 파싱하고 다시 문자열로 serialize 한다.
-- [ ] Phase 02 - Read JSON Types
+- [x] Phase 02 - Read JSON Types
   - object, array, string, number, bool, null을 읽는 가장 작은 예제를 만든다.
-- [ ] Phase 03 - Build JSON Programmatically
+- [x] Phase 03 - Build JSON Programmatically
   - C++ 코드로 object와 array를 직접 조립해 serialize 한다.
 - [ ] Phase 04 - Custom Struct to JSON
   - 사용자 정의 타입을 `value_from` 기반으로 JSON으로 바꾼다.

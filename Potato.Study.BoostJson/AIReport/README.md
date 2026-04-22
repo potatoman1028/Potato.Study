@@ -6,6 +6,8 @@
 
 - `Next-Steps.md`
 - `Phase-01-Parse-And-Serialize.md`
+- `Phase-02-Read-Json-Types.md`
+- `Phase-03-Build-Json-Programmatically.md`
 
 ## 사용 방식
 
