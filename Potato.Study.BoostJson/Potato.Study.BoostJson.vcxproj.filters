@@ -26,6 +26,12 @@
     <ClCompile Include="phases\Phase03BuildJsonProgrammatically.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="phases\Phase04CustomStructToJson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="phases\Phase05JsonToCustomStruct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phases\Phase01ParseSerialize.h">
@@ -35,6 +41,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="phases\Phase03BuildJsonProgrammatically.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase04CustomStructToJson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase05JsonToCustomStruct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -55,6 +67,12 @@
       <Filter>Documents</Filter>
     </None>
     <None Include="AIReport\Phase-03-Build-Json-Programmatically.md">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="AIReport\Phase-04-Custom-Struct-To-Json.md">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="AIReport\Phase-05-Json-To-Custom-Struct.md">
       <Filter>Documents</Filter>
     </None>
   </ItemGroup>

@@ -20,6 +20,8 @@
 - `Phase 01 - Parse and Serialize`
 - `Phase 02 - Read JSON Types`
 - `Phase 03 - Build JSON Programmatically`
+- `Phase 04 - Custom Struct to JSON`
+- `Phase 05 - JSON to Custom Struct`
 
 필수 조건:
 
@@ -46,6 +48,8 @@
 - `1`: Phase 01 - Parse and Serialize
 - `2`: Phase 02 - Read JSON Types
 - `3`: Phase 03 - Build JSON Programmatically
+- `4`: Phase 04 - Custom Struct to JSON
+- `5`: Phase 05 - JSON to Custom Struct
 
 참고:
 
@@ -53,7 +57,7 @@
 - 따라서 실제 CLI 복원 절차는 manifest 추가와 함께 정리해야 한다.
 - 프로젝트 파일에는 `BOOST_ROOT` fallback 속성이 남아 있을 수 있지만, 학습 문서는 더 이상 수동 Boost 설치 절차를 기본 경로로 안내하지 않는다.
 - 이번 phase는 기본 Boost.JSON 라이브러리 링크 방식을 사용한다.
-- 목표는 먼저 `parse` / `serialize` 흐름과 JSON 타입 읽기를 확인하고, 이어서 object / array를 C++ 코드에서 직접 조립하는 것이다.
+- 목표는 먼저 `parse` / `serialize`, JSON 타입 읽기, DOM 직접 조립, custom struct -> JSON 변환을 확인하고, 이어서 JSON -> custom struct 복원을 보는 것이다.
 
 ## 무엇을 배웠는지
 
@@ -64,3 +68,5 @@
 - Phase 01에서는 JSON text -> `boost::json::value` -> JSON text 흐름을 가장 작은 예제로 확인할 수 있다.
 - Phase 02에서는 object, array, string, number, bool, null을 각각 어떤 API로 읽는지 확인할 수 있다.
 - Phase 03에서는 parse 없이 object와 array를 직접 조립한 뒤 serialize 하는 흐름을 확인할 수 있다.
+- Phase 04에서는 custom struct를 `value_from()`과 `tag_invoke`로 JSON object로 바꾸는 흐름을 확인할 수 있다.
+- Phase 05에서는 JSON object를 `value_to<T>()`와 `tag_invoke`로 다시 custom struct로 복원하는 흐름을 확인할 수 있다.

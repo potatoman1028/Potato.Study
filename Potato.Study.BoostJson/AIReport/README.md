@@ -8,6 +8,8 @@
 - `Phase-01-Parse-And-Serialize.md`
 - `Phase-02-Read-Json-Types.md`
 - `Phase-03-Build-Json-Programmatically.md`
+- `Phase-04-Custom-Struct-To-Json.md`
+- `Phase-05-Json-To-Custom-Struct.md`
 
 ## 사용 방식
 

@@ -13,7 +13,7 @@
 
 ## 현재 작업 phase
 
-- [Phase-03-Build-Json-Programmatically.md](./Phase-03-Build-Json-Programmatically.md)
+- [Phase-05-Json-To-Custom-Struct.md](./Phase-05-Json-To-Custom-Struct.md)
 
 ## TODO List
 
@@ -23,9 +23,9 @@
   - object, array, string, number, bool, null을 읽는 가장 작은 예제를 만든다.
 - [x] Phase 03 - Build JSON Programmatically
   - C++ 코드로 object와 array를 직접 조립해 serialize 한다.
-- [ ] Phase 04 - Custom Struct to JSON
+- [x] Phase 04 - Custom Struct to JSON
   - 사용자 정의 타입을 `value_from` 기반으로 JSON으로 바꾼다.
-- [ ] Phase 05 - JSON to Custom Struct
+- [x] Phase 05 - JSON to Custom Struct
   - JSON object를 `value_to<T>` 기반으로 다시 사용자 정의 타입으로 복원한다.
 - [ ] Phase 06 - Validation and Error Handling
   - 잘못된 JSON, 필드 누락, 타입 mismatch를 어떻게 다룰지 확인한다.

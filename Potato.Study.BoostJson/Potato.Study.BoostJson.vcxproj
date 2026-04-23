@@ -89,17 +89,23 @@
     <ClCompile Include="phases\Phase01ParseSerialize.cpp" />
     <ClCompile Include="phases\Phase02ReadJsonTypes.cpp" />
     <ClCompile Include="phases\Phase03BuildJsonProgrammatically.cpp" />
+    <ClCompile Include="phases\Phase04CustomStructToJson.cpp" />
+    <ClCompile Include="phases\Phase05JsonToCustomStruct.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phases\Phase01ParseSerialize.h" />
     <ClInclude Include="phases\Phase02ReadJsonTypes.h" />
     <ClInclude Include="phases\Phase03BuildJsonProgrammatically.h" />
+    <ClInclude Include="phases\Phase04CustomStructToJson.h" />
+    <ClInclude Include="phases\Phase05JsonToCustomStruct.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AIReport\Next-Steps.md" />
     <None Include="AIReport\Phase-01-Parse-And-Serialize.md" />
     <None Include="AIReport\Phase-02-Read-Json-Types.md" />
     <None Include="AIReport\Phase-03-Build-Json-Programmatically.md" />
+    <None Include="AIReport\Phase-04-Custom-Struct-To-Json.md" />
+    <None Include="AIReport\Phase-05-Json-To-Custom-Struct.md" />
     <None Include="AIReport\README.md" />
     <None Include="README.md" />
   </ItemGroup>
