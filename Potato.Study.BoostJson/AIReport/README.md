@@ -10,6 +10,7 @@
 - `Phase-03-Build-Json-Programmatically.md`
 - `Phase-04-Custom-Struct-To-Json.md`
 - `Phase-05-Json-To-Custom-Struct.md`
+- `Phase-06-Validation-And-Error-Handling.md`
 
 ## 사용 방식
 

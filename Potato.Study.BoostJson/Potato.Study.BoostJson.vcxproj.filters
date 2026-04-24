@@ -32,6 +32,9 @@
     <ClCompile Include="phases\Phase05JsonToCustomStruct.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="phases\Phase06ValidationAndErrorHandling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phases\Phase01ParseSerialize.h">
@@ -47,6 +50,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="phases\Phase05JsonToCustomStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="phases\Phase06ValidationAndErrorHandling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -73,6 +79,9 @@
       <Filter>Documents</Filter>
     </None>
     <None Include="AIReport\Phase-05-Json-To-Custom-Struct.md">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="AIReport\Phase-06-Validation-And-Error-Handling.md">
       <Filter>Documents</Filter>
     </None>
   </ItemGroup>

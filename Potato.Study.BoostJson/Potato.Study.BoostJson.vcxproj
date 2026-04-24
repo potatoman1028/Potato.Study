@@ -91,6 +91,7 @@
     <ClCompile Include="phases\Phase03BuildJsonProgrammatically.cpp" />
     <ClCompile Include="phases\Phase04CustomStructToJson.cpp" />
     <ClCompile Include="phases\Phase05JsonToCustomStruct.cpp" />
+    <ClCompile Include="phases\Phase06ValidationAndErrorHandling.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="phases\Phase01ParseSerialize.h" />
@@ -98,6 +99,7 @@
     <ClInclude Include="phases\Phase03BuildJsonProgrammatically.h" />
     <ClInclude Include="phases\Phase04CustomStructToJson.h" />
     <ClInclude Include="phases\Phase05JsonToCustomStruct.h" />
+    <ClInclude Include="phases\Phase06ValidationAndErrorHandling.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AIReport\Next-Steps.md" />
@@ -106,6 +108,7 @@
     <None Include="AIReport\Phase-03-Build-Json-Programmatically.md" />
     <None Include="AIReport\Phase-04-Custom-Struct-To-Json.md" />
     <None Include="AIReport\Phase-05-Json-To-Custom-Struct.md" />
+    <None Include="AIReport\Phase-06-Validation-And-Error-Handling.md" />
     <None Include="AIReport\README.md" />
     <None Include="README.md" />
   </ItemGroup>

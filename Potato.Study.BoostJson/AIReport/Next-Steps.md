@@ -13,7 +13,7 @@
 
 ## 현재 작업 phase
 
-- [Phase-05-Json-To-Custom-Struct.md](./Phase-05-Json-To-Custom-Struct.md)
+- [Phase-06-Validation-And-Error-Handling.md](./Phase-06-Validation-And-Error-Handling.md)
 
 ## TODO List
 
@@ -27,7 +27,7 @@
   - 사용자 정의 타입을 `value_from` 기반으로 JSON으로 바꾼다.
 - [x] Phase 05 - JSON to Custom Struct
   - JSON object를 `value_to<T>` 기반으로 다시 사용자 정의 타입으로 복원한다.
-- [ ] Phase 06 - Validation and Error Handling
+- [x] Phase 06 - Validation and Error Handling
   - 잘못된 JSON, 필드 누락, 타입 mismatch를 어떻게 다룰지 확인한다.
 - [ ] Phase 07 - Performance Basics
   - `stream_parser`, `monotonic_resource`, parser 재사용이 어떤 차이를 만드는지 본다.

@@ -22,6 +22,7 @@
 - `Phase 03 - Build JSON Programmatically`
 - `Phase 04 - Custom Struct to JSON`
 - `Phase 05 - JSON to Custom Struct`
+- `Phase 06 - Validation and Error Handling`
 
 필수 조건:
 
@@ -50,6 +51,7 @@
 - `3`: Phase 03 - Build JSON Programmatically
 - `4`: Phase 04 - Custom Struct to JSON
 - `5`: Phase 05 - JSON to Custom Struct
+- `6`: Phase 06 - Validation and Error Handling
 
 참고:
 
@@ -57,7 +59,7 @@
 - 따라서 실제 CLI 복원 절차는 manifest 추가와 함께 정리해야 한다.
 - 프로젝트 파일에는 `BOOST_ROOT` fallback 속성이 남아 있을 수 있지만, 학습 문서는 더 이상 수동 Boost 설치 절차를 기본 경로로 안내하지 않는다.
 - 이번 phase는 기본 Boost.JSON 라이브러리 링크 방식을 사용한다.
-- 목표는 먼저 `parse` / `serialize`, JSON 타입 읽기, DOM 직접 조립, custom struct -> JSON 변환을 확인하고, 이어서 JSON -> custom struct 복원을 보는 것이다.
+- 목표는 먼저 `parse` / `serialize`, JSON 타입 읽기, DOM 직접 조립, custom struct 양방향 변환을 확인하고, 이어서 validation과 error handling을 보는 것이다.
 
 ## 무엇을 배웠는지
 
@@ -70,3 +72,4 @@
 - Phase 03에서는 parse 없이 object와 array를 직접 조립한 뒤 serialize 하는 흐름을 확인할 수 있다.
 - Phase 04에서는 custom struct를 `value_from()`과 `tag_invoke`로 JSON object로 바꾸는 흐름을 확인할 수 있다.
 - Phase 05에서는 JSON object를 `value_to<T>()`와 `tag_invoke`로 다시 custom struct로 복원하는 흐름을 확인할 수 있다.
+- Phase 06에서는 parse error와 validation error를 구분하고, missing field와 type mismatch를 직접 처리하는 흐름을 확인할 수 있다.

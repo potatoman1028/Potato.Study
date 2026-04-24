@@ -6,6 +6,7 @@
 #include "phases/Phase03BuildJsonProgrammatically.h"
 #include "phases/Phase04CustomStructToJson.h"
 #include "phases/Phase05JsonToCustomStruct.h"
+#include "phases/Phase06ValidationAndErrorHandling.h"
 
 namespace
 {
@@ -17,6 +18,7 @@ void PrintMenu()
     std::cout << "3. Phase 03 - Build JSON programmatically\n";
     std::cout << "4. Phase 04 - Custom struct to JSON\n";
     std::cout << "5. Phase 05 - JSON to custom struct\n";
+    std::cout << "6. Phase 06 - Validation and error handling\n";
     std::cout << "q. Quit\n";
     std::cout << "> ";
 }
@@ -59,13 +61,18 @@ int main()
             std::cout << "\n--- Phase 05 - JSON to Custom Struct ---\n\n";
             RunPhase05JsonToCustomStruct();
         }
+        else if (input == "6")
+        {
+            std::cout << "\n--- Phase 06 - Validation and Error Handling ---\n";
+            RunPhase06ValidationAndErrorHandling();
+        }
         else if (input == "q" || input == "Q")
         {
             break;
         }
         else
         {
-            std::cout << "Unknown command. Select 1, 2, 3, 4, 5, or q.\n";
+            std::cout << "Unknown command. Select 1, 2, 3, 4, 5, 6, or q.\n";
         }
     }
 
